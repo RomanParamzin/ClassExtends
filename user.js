@@ -5,6 +5,8 @@ class User {
   }
 
   getFullName() {
-    return this.name + ' ' + this.surname;
+    return this.name + " " + this.surname;
   }
 }
+
+module.exports = User;
