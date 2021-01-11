@@ -1,12 +1,11 @@
-class Professor {
+class Professor extends User {
   constructor(name, surname, yearOfAdm) {
-    this.name = name;
-    this.surname = surname;
+    super(name, surname)
     this.yearOfAdm = yearOfAdm
   }
 
   getFullName() {
-    return this.name + ' ' + this.surname;
+    super.getFullName()
   }
 
   getWorkerYears() {

@@ -1,12 +1,11 @@
-class Student {
+class Student extends User {
   constructor(name, surname, yearOfAdm) { //yearOfAdm - год поступления в институт
-    this.name = name;
-    this.surname = surname;
+    super(name, surname)
     this.yearOfAdm = yearOfAdm
   }
 
   getFullName() {
-    return this.name + ' ' + this.surname;
+    super.getFullName()
   }
 
   getCourse() {
