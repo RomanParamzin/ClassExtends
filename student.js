@@ -1,12 +1,9 @@
-class Student {
-  constructor(name, surname, yearOfAdm) { //yearOfAdm - год поступления в институт
-    this.name = name;
-    this.surname = surname;
-    this.yearOfAdm = yearOfAdm
-  }
+const { User } = require('./user');
 
-  getFullName() {
-    return this.name + ' ' + this.surname;
+class Student extends User {
+  constructor(name, surname, yearOfAdm) {
+    super(name, surname);
+    this.yearOfAdm = yearOfAdm;
   }
 
   getCourse() {
