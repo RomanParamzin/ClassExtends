@@ -8,3 +8,5 @@ class User {
     return this.name + ' ' + this.surname;
   }
 }
+
+module.exports = { User }
